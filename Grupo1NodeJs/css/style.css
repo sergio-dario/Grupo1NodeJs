@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #88b3f3;
+    color: #fff;
+    border-bottom: 2px solid #fff; 
+}
+
+.Marca {
+    width: 50px;
+    height: 50px;
+    background-image: url(../static/img/avion.jpg);
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    background-position: left center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: color 0.3s; /* Agregar una transición para el color del texto */
+}
+
+nav a:hover {
+    color: #f8f8f8; /* Cambiar el color del texto al pasar el mouse */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 40px; /* Reducir el espacio entre los elementos de la lista */
+}
+
+/* Estilos para los elementos de menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Ajustar la posición vertical */
+    left: 0;
+    background-color: #444;
+    width: 280px;
+    padding: 10px;
+    border-radius: 5px; /* Agregar bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+}
+
+.sub-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    transition: background-color 0.3s; /* Agregar transición para el color de fondo */
+}
+
+.sub-menu a:hover {
+    background-color: #666; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+
+
+
+
+
