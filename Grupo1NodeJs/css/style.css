@@ -5,9 +5,14 @@ body {
 }
 
 header {
-    background-color: #88b3f3;
-    color: #fff;
-    border-bottom: 2px solid #fff; 
+    position: absolute;
+    z-index: 10; 
+    background-color: rgba(171, 163, 163, 0.5);
+    color: #292323;
+    border-bottom: 0px solid #fff;
+    margin-top: 0;
+    width: 100%; /* Ajusta el ancho del header */
+    height: 80px; /* Ajusta la altura del header */
 }
 
 .Marca {
