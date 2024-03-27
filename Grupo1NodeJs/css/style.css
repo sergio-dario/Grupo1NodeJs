@@ -22,7 +22,6 @@ header {
     z-index: 1;
     background-position: left center;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,8 +30,9 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #141414;
     text-decoration: none;
+    font-size: 20px; /* Tamaño de fuente */
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f8f8f8; /* Cambiar el color del texto al pasar el mouse */
+    color: #141414; /* Cambiar el color del texto al pasar el mouse */
 }
 
 nav ul {
@@ -51,7 +51,7 @@ nav ul {
 }
 
 nav ul li:not(:last-child) {
-    margin-right: 40px; /* Reducir el espacio entre los elementos de la lista */
+    margin-right: 30px; /* Reducir el espacio entre los elementos de la lista */
 }
 
 /* Estilos para los elementos de menú desplegable */
@@ -62,7 +62,7 @@ nav ul li:not(:last-child) {
 .dropdown > a {
     display: block;
     padding: 10px;
-    color: #fff;
+    color: #141414;
     text-decoration: none;
 }
 
@@ -73,11 +73,11 @@ nav ul li:not(:last-child) {
 .sub-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 10px); /* Ajustar la posición vertical */
+    top: calc(100% + 0px); /* Ajustar la posición vertical */
     left: 0;
-    background-color: #444;
+    background-color: #9d9195;
     width: 280px;
-    padding: 10px;
+    padding: 0px;
     border-radius: 5px; /* Agregar bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra */
 }
@@ -93,6 +93,74 @@ nav ul li:not(:last-child) {
 .sub-menu a:hover {
     background-color: #666; /* Cambiar el color de fondo al pasar el mouse */
 }
+#banner {
+    /* Estilos para el banner */
+    position: relative;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../static/img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.9; /* Ajusta la opacidad según sea necesario */
+}
+
+
+.banner_content {
+    /* Estilos para el contenido dentro del banner */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(209, 202, 202); /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    font-family: "Dancing Script", sans-serif; /* Familia de fuente */
+    font-size: 24px; /* Tamaño de la fuente */
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Sombra de texto */
+}
+.button {
+    /* Convertir elementos de bloque en línea */
+    display: inline-block;
+    
+    /* Propiedades del contenedor */
+    padding: 5px 10px; /* Reducir el padding */
+    background-color: #88b3f3; /* Cambiar el color de fondo a rojo */
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.7rem; /* Reducir el tamaño de la fuente */
+    border-radius: 10px; /* Agregar bordes redondos */
+}
+.button:hover{
+    background-color: rgb(143, 130, 130);
+  }
+  /* Animación para enfatizar el cambio de color 
+  lo definimos con @keyframe luego le damos un nombre "pulse"*/
+  @keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+  .button:hover{
+    animation: pulse 0.5s infinite alternate;
+  }
+
+
+
 
 
 
