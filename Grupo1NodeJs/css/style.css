@@ -97,6 +97,7 @@ nav ul li:not(:last-child) {
     /* Estilos para el banner */
     position: relative;
     height: 100vh; /* Ajusta la altura según sea necesario */
+    z-index: -1;
 }
 
 #banner::before {
