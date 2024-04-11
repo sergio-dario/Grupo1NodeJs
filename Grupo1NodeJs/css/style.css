@@ -2,17 +2,19 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #8dbcbc;
 }
 
 header {
     background-color: #88b3f3;
     color: #fff;
     border-bottom: 2px solid #fff; 
+    position: relative;
 }
 
 .Marca {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-image: url(../static/img/avion.jpg);
     background-size: cover;
     display: inline-block;
@@ -160,6 +162,77 @@ nav ul li:not(:last-child) {
   .button:hover{
     animation: pulse 0.5s infinite alternate;
   }
+
+ 
+
+footer {
+    background-color: #88b3f3;
+    color: #fff;
+    padding: 10px 20px;
+}
+.lugar_content {
+    
+    color: rgb(209, 202, 202);
+    text-align: center;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+#lugar-actividad {
+    display: flex; /* Establece el contenedor como un flex container */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+    justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
+  }
+  
+  .lugar {
+    flex-basis: calc(25% - 20px); /* Establece el tamaño base de los elementos a 25% menos el espacio entre ellos */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
+  }
+  
+  .lugar img {
+    width: 300px; /* Ancho en píxeles */
+    height: 200px; /* Altura en píxeles */
+    object-fit: cover; /* Escala la imagen para que ocupe toda su caja manteniendo su relación de aspecto */
+    margin-right: 20px; /* Margen derecho entre las imágenes */
+  }
+
+  
+@media only screen and (max-width: 850px) {
+    nav {
+        flex-direction: column; /* Cambia a disposición de columna */
+    }
+
+    .brand {
+        order: 1; /* Mueve la marca al principio de la columna */
+        margin-bottom: 10px; /* Espaciado entre la marca y los elementos de navegación */
+    }
+
+    ul {
+        order: 2; /* Mueve la lista de navegación después de la marca */
+    }
+   
+    .lugar {
+        flex-basis: calc(50% - 10px);
+    }
+
+    nav ul li:not(:last-child) {
+        margin-right: 0px; /* Reducir el espacio entre elementos de la lista */
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .lugar {
+        flex-basis: calc(100% - 10px);
+    }
+}
+
+
+
+
+
+
 
 
 
