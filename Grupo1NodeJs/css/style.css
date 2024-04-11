@@ -210,7 +210,7 @@ footer {
     width: 300px; /* Ancho en píxeles */
     height: 200px; /* Altura en píxeles */
     object-fit: cover; /* Escala la imagen para que ocupe toda su caja manteniendo su relación de aspecto */
-    margin-right: 20px; /* Margen derecho entre las imágenes */
+    margin-right: 10px; /* Margen derecho entre las imágenes */
   }
 
   
