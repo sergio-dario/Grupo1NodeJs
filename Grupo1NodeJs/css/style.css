@@ -220,7 +220,7 @@ footer {
     }
 
     .brand {
-        order: 1; /* Mueve la marca al principio de la columna */
+        order: 0; /* Mueve la marca al principio de la columna */
         margin-bottom: 10px; /* Espaciado entre la marca y los elementos de navegación */
     }
 
