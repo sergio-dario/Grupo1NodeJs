@@ -1,98 +1,351 @@
+/* Importacion de fuente googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* Estilos generales */
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Montserrat", sans-serif;
+    background-color: #8dbcbc;
 }
 
 header {
-    background-color: #88b3f3;
-    color: #fff;
-    border-bottom: 2px solid #fff; 
-}
-
-.Marca {
-    width: 50px;
-    height: 50px;
-    background-image: url(../static/img/avion.jpg);
-    background-size: cover;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: relative;
-    z-index: 1;
-    background-position: left center;
+    /* position: fixed;
+    z-index: 1; */
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%); */
+    background-color: #7aacf5;
+    position: relative;    
+    width: 100vw;
+    padding: 15px 0px; /* Añadir un poco de espacio en los extremos */
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px; 
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+a.logo {
     display: flex;
+    color: #137ca8;
+    font-size: 1.7rem;
+    font-weight: 550;
     align-items: center;
-    padding: 10px 20px;
-    transition: color 0.3s; /* Agregar una transición para el color del texto */
 }
-
-nav a:hover {
-    color: #f8f8f8; /* Cambiar el color del texto al pasar el mouse */
-}
-
+.marca {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../static/img/avionPNG.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 7px;     
+} 
 nav ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    align-items: center;
 }
 
-nav ul li:not(:last-child) {
-    margin-right: 40px; /* Reducir el espacio entre los elementos de la lista */
+nav > ul > li:not(:last-child) {
+    margin-right: 30px; 
+    align-items: center; /* no hace nada */
+}
+nav a {
+    color: #052e40;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 560;   
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #504e4e; 
 }
 
 /* Estilos para los elementos de menú desplegable */
-.dropdown {
+li.dropdown {
     position: relative;
-}
-
-.dropdown > a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.dropdown:hover .sub-menu {
-    display: block;
+    display: flex;
 }
 
 .sub-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 10px); /* Ajustar la posición vertical */
+    top: calc(100%); 
     left: 0;
     background-color: #444;
     width: 280px;
-    padding: 10px;
-    border-radius: 5px; /* Agregar bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 10;
+}
+.dropdown:hover .sub-menu {
+    display: block;
 }
 
 .sub-menu a {
     color: #fff;
     text-decoration: none;
     display: block;
+    width: 100%;
     padding: 8px 16px;
-    transition: background-color 0.3s; /* Agregar transición para el color de fondo */
+    transition: background-color 0.3s; 
 }
 
 .sub-menu a:hover {
-    background-color: #666; /* Cambiar el color de fondo al pasar el mouse */
+    background-color: #666; 
+} 
+/* termina el header */
+
+/* empieza el main */
+/*comienza el portada */
+#banner {
+    /* Estilos para el banner */
+    position: relative;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+ 
 }
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../static/img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.9; /* Ajusta la opacidad según sea necesario */
+}
+
+
+.banner_content {
+    /* Estilos para el contenido dentro del banner */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(209, 202, 202); /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    font-family: "Dancing Script", sans-serif; /* Familia de fuente */
+    font-size: 24px; /* Tamaño de la fuente */
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Sombra de texto */
+}
+.button {
+    /* Convertir elementos de bloque en línea */
+    display: inline-block;
+    
+    /* Propiedades del contenedor */
+    padding: 5px 10px; /* Reducir el padding */
+    background-color: #88b3f3; /* Cambiar el color de fondo a rojo */
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.7rem; /* Reducir el tamaño de la fuente */
+    border-radius: 10px; /* Agregar bordes redondos */
+}
+.button:hover{
+    background-color: rgb(143, 130, 130);
+  }
+  /* Animación para enfatizar el cambio de color 
+  lo definimos con @keyframe luego le damos un nombre "pulse"*/
+  @keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+  .button:hover{
+    animation: pulse 0.5s infinite alternate;
+  }
+/*termina el portada*/
+/*comienza seccion de busqueda*/
+.que_visitas {
+    display: block;
+    justify-content: center;
+}
+.que_visitas h3 {
+    display: block;
+    margin: 0 auto;
+}
+
+/*termina seccion de busqueda*/
+
+footer {
+    background-color: #88b3f3;
+    color: #fff;
+    padding: 10px 20px;
+}
+.lugar_content {
+    
+    color: rgb(209, 202, 202);
+    text-align: center;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+#lugar-actividad {
+    display: flex; /* Establece el contenedor como un flex container */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+    justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
+  }
+  
+  .lugar {
+    flex-basis: calc(25% - 20px); /* Establece el tamaño base de los elementos a 25% menos el espacio entre ellos */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
+  }
+  
+  .lugar img {
+    width: 300px; /* Ancho en píxeles */
+    height: 200px; /* Altura en píxeles */
+    object-fit: cover; /* Escala la imagen para que ocupe toda su caja manteniendo su relación de aspecto */
+    margin-right: 10px; /* Margen derecho entre las imágenes */
+  }
+
+  
+@media only screen and (max-width: 850px) {
+    nav {
+        flex-direction:column-reverse; /* Cambia a disposición de columna */
+    }
+
+    .brand {
+        order: 1; /* Mueve la marca al principio de la columna */
+        margin-bottom: 10px; /* Espaciado entre la marca y los elementos de navegación */
+    }
+
+    ul {
+        order: 2; /* Mueve la lista de navegación después de la marca */
+    }
+   
+    .lugar {
+        flex-basis: calc(50% - 10px);
+    }
+
+    nav ul li:not(:last-child) {
+        margin-right: 0px; /* Reducir el espacio entre elementos de la lista */
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .lugar {
+        flex-basis: calc(100% - 10px);
+    }
+}
+
+.bodyRegistrarse {
+    position: relative; /* Asegura que los elementos absolutos sean relativos a este contenedor */
+    width: 100%;
+    height: 100%;
+    background-image: url("../static/img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.bodyRegistrarse::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 49, 49, 0.6); /* Ajusta la opacidad del fondo */
+    z-index: -1;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse {
+    background-color: #9d9195;
+    opacity: 0.8; /* Ajusta la opacidad según sea necesario */
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 1.2rem;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form input:not(.check, .boton), 
+.bodyRegistrarse .main .seccionRegistrarse form select {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid #a4acf7;
+    background-color: #333333;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form .error input:not(.check, .boton), 
+.bodyRegistrarse .main .seccionRegistrarse form .error select {
+    border: 1px solid #475fc7;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form .error-text {
+    color: #475fc7;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form .terminos {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form .terminos .textoCheck {
+    margin-left: 10px;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form .boton {
+    width: 87%;
+    box-sizing: content-box;
+    background-color:  #a4acf7;
+    border: 2px solid  #a4acf7;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form .ayuda {
+    margin-top: 40px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #787878;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
 
 
 
