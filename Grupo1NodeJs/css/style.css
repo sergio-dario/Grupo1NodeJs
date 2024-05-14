@@ -1,13 +1,12 @@
 /* Importacion de fuente googlefonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Estilos generales */
 *{
     box-sizing: border-box;
 }
 body {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
     /* font-family: Arial, sans-serif; */
     font-family: "Montserrat", sans-serif;
     background-color: #8dbcbc;
@@ -15,13 +14,17 @@ body {
 
 
 header {
-    /* position: fixed;
-    z-index: 1; */
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%); */
-    background-color: #7aacf5;
-    position: relative;    
+    position: fixed;
+    z-index: 2;
     width: 100vw;
     padding: 15px 0px; /* Añadir un poco de espacio en los extremos */
+}
+.initial{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+
+}
+.scroll {
+    background-color: #7aacf5;
 }
 
 nav {
@@ -112,7 +115,7 @@ li.dropdown {
     /* Estilos para el banner */
     position: relative;
     height: 100vh; /* Ajusta la altura según sea necesario */
- 
+
 }
 
 #banner::before {
