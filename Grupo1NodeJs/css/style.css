@@ -21,7 +21,6 @@ header {
 }
 .initial{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
-
 }
 .scroll {
     background-color: #7aacf5;
@@ -180,8 +179,15 @@ li.dropdown {
 /*termina el portada*/
 /*comienza seccion de busqueda*/
 .que_visitas {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 0 auto; */
+}
+.que_visitas form {
     display: block;
-    justify-content: center;
+    margin: 0 auto;
 }
 .que_visitas h3 {
     display: block;
