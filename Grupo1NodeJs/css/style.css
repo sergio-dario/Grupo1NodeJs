@@ -182,16 +182,17 @@ li.dropdown {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    /* align-items: center; */
-    /* margin: 0 auto; */
-}
-.que_visitas form {
-    display: block;
-    margin: 0 auto;
+    align-items: center;
+    /* margin: 0/ auto; */
 }
 .que_visitas h3 {
     display: block;
-    margin: 0 auto;
+    margin: 10px 20px 30px;
+    /* margin-top: ; */
+}
+.que_visitas form {
+    display: block;
+    margin: 0;
 }
 
 /*termina seccion de busqueda*/
