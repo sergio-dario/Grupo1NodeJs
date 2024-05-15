@@ -8,13 +8,9 @@ window.addEventListener("scroll", function(){
     let header = document.getElementsByTagName("header");
     if(window.scrollY <= 10){
         header[0].className = "initial";
-        // header.classList.remove("scroll");
-        // header.classList.add("initial");
-        // console.log("Hola aqui no paso nada");
+        
     }else{
         header[0].className = "scroll";
-        // header.classList.remove("initial");
-        // header.classList.add("scroll");
-        // console.log("paso algo");
+
     }
 })
