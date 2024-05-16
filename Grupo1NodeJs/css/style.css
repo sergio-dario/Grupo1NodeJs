@@ -180,20 +180,22 @@ li.dropdown {
 /*comienza seccion de busqueda*/
 .que_visitas {
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    /* flex-direction: column; */
+    justify-content: center;
     align-items: center;
     /* margin: 0/ auto; */
 }
 .que_visitas h3 {
     display: block;
-    margin: 10px 20px 30px;
-    /* margin-top: ; */
+    margin: 20px 40px 20px 0px;
 }
 .que_visitas form {
     display: block;
     margin: 0;
 }
+/* .input-buscador{
+
+} */
 
 /*termina seccion de busqueda*/
 
