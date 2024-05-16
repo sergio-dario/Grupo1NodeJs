@@ -260,30 +260,26 @@ footer {
 }
 
 .bodyRegistrarse {
+    content: "";
     position: relative; /* Asegura que los elementos absolutos sean relativos a este contenedor */
+    top: 0px;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url("../static/img/portada.jpg");
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: 0.9; 
 }
 
-.bodyRegistrarse::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(51, 49, 49, 0.6); /* Ajusta la opacidad del fondo */
-    z-index: -1;
-}
+
 
 .bodyRegistrarse .main .seccionRegistrarse {
     background-color: #9d9195;
-    opacity: 0.8; /* Ajusta la opacidad según sea necesario */
-    width: 300px;
+    opacity: 0.8; /* Ajusta la opacidad */
+    width: 400px;
     margin: 0 auto;
     border-radius: 5px;
     padding: 40px 20px;
@@ -291,7 +287,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 95vh;
     font-size: 1.2rem;
 }
 
@@ -308,15 +304,11 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-.bodyRegistrarse .main .seccionRegistrarse form .error input:not(.check, .boton), 
-.bodyRegistrarse .main .seccionRegistrarse form .error select {
-    border: 1px solid #475fc7;
-}
 
 .bodyRegistrarse .main .seccionRegistrarse form .error-text {
     color: #475fc7;
     font-size: 0.8rem;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -331,25 +323,20 @@ footer {
     margin-left: 10px;
 }
 
-.bodyRegistrarse .main .seccionRegistrarse form .boton {
+.bodyRegistrarse .main .seccionRegistrarse  .boton {
     width: 87%;
     box-sizing: content-box;
     background-color:  #a4acf7;
     border: 2px solid  #a4acf7;
     color: #ffffff;
     padding: 1rem 1rem;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.bodyRegistrarse .main .seccionRegistrarse form .ayuda {
-    margin-top: 40px;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #787878;
-    font-weight: 400;
-}
+
+
 
 
 

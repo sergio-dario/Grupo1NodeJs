@@ -2,39 +2,56 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CaC-Movies, Películas y Series Online</title>
-    <!--Favicon-->
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo | Agencia de turismo | viajes</title>
+  <!--Favicon-->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
-    <!--zona scrip-->
+  <!--zona scrip-->
 
-    <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
 
 
-
-
-<body>
-    <header>
-        <nav>
-            <!-- espacio del logo -->
-            <a href="../index.html"><i class="fa-solid fa-film"></i>CaC-Movies</a>
-        </nav>
-
+</head>
+<body class="bodyRegistrarse">
+    <header class="headerRegistrarse">
+        <a class="anclaLogo" href="../index.html">
+            <i class="Marca" ></i>
+            <span>ARGENTUR</span>
+            
+        </a>
     </header>
-    <!-- seccion prinsipal de register -->
-    <main>
-
+    <main id="main" class="main">
+        <section  class="seccionRegistrarse">
+           
+            <form action="" method="get">
+                <h2 >Registrarse</h2>
+                <form action="#" method="post">
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="contrasena">Nueva Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                    <label for="confirmar_contrasena">Repita la Contraseña:</label>
+                    <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+                    <input class="boton" type="submit" value="Registrate">
+                    <div>
+                        <a id="ayuda" class="ayuda" href="login.html">Inicia Sesión</a>
+                    </div>
+                </form>
+            </form>
+        </section>
     </main>
-    <!-- zona de pie de pagina   -->
-    <footer>
-        <a href="./templates/register.html" download="nombre_personalizado.html">Descarga del archivo</a>&nbsp;&nbsp;
-        <a href="">Terminos y condisiones</a>&nbsp;&nbsp;
-        <a href="#">Ayuda</a>&nbsp;&nbsp;
-        <a href="#">Administrador de peliculas</a>&nbsp;&nbsp;
+   
 
-    </footer>
 
 </body>
 
