@@ -201,6 +201,14 @@ footer {
     color: #fff;
     padding: 10px 20px;
 }
+#cordoba {padding-top: 100px; }
+#mendoza {padding-top: 100px; }
+#misiones {padding-top: 100px;}
+#areco {padding-top: 100px; }
+#sanPedro {padding-top: 100px; }
+#baraderos {padding-top: 100px;}
+
+
 .lugar_content {
     
     color: rgb(209, 202, 202);
