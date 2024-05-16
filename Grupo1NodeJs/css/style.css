@@ -342,7 +342,21 @@ footer {
     font-size: 1rem;
     font-weight: 500;
 }
-
+#registroExitoso {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #a4acf7;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
 
 
