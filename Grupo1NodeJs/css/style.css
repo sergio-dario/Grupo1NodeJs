@@ -13,6 +13,8 @@
     /*fuente primaria*/
     --primary-font: Arial, sans-serif;
     --fuente-oscura:#031a25;
+    --primary-color-btm-hover: #719cdd;
+    --primary-color-btm-active: #668bc4;
 }
 
 /* Estilos generales */
@@ -253,12 +255,25 @@ li.dropdown {
     border-radius: 15px;
     color: var(--fuente-oscura);
 }
+.boton-buscador:hover {
+    background: var(--primary-color-btm-hover);
+}
+.boton-buscador:active {
+    background: var(--primary-color-btm-active);
+}
 /*termina seccion de busqueda*/
 
 footer {
-    background-color: #88b3f3;
-    color: #fff;
+    background-color: var(--primary-color);
     padding: 10px 20px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--fuente-oscura);
+    font-size: 0.85rem;
+}
+footer a:hover {
+    text-decoration: underline;
 }
 #cordoba {padding-bottom: 100px; }
 #mendoza {padding-bottom: 100px; }
