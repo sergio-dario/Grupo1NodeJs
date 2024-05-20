@@ -284,6 +284,14 @@ footer a:hover {
     /* width: 400px; */
     /* background: grey; */
 }
+.container-a {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-a a {
+    display: block;
+}
+
 .redes p {
     margin-top: 0px;
     margin-bottom: 10px;
