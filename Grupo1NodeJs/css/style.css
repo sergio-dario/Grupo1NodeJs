@@ -284,6 +284,14 @@ footer a:hover {
     /* width: 400px; */
     /* background: grey; */
 }
+.container-a {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-a a {
+    display: block;
+}
+
 .redes p {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -368,9 +376,10 @@ footer a:hover {
     }
 }
 
-.bodyRegistrarse {
-    content: "";
-    position: relative; /* Asegura que los elementos absolutos sean relativos a este contenedor */
+/* .bodyRegistrarse {
+    content: ""; */
+/* Asegura que los elementos absolutos sean relativos a este contenedor */
+    /* position: relative; 
     top: 0px;
     left: 0;
     width: 100%;
@@ -381,14 +390,13 @@ footer a:hover {
     background-repeat: no-repeat;
     z-index: -2;
     opacity: 0.9; 
-}
+} */
 
-
-
-.bodyRegistrarse .main .seccionRegistrarse {
+/* .bodyRegistrarse .main .seccionRegistrarse {
     background-color: #9d9195;
-    opacity: 0.8; /* Ajusta la opacidad */
-    width: 400px;
+    opacity: 0.8;  */
+    /* Ajusta la opacidad */
+    /* width: 400px;
     margin: 0 auto;
     border-radius: 5px;
     padding: 40px 20px;
@@ -412,7 +420,6 @@ footer a:hover {
     outline: none;
     color: rgb(255, 255, 255);
 }
-
 
 .bodyRegistrarse .main .seccionRegistrarse form .error-text {
     color: #475fc7;
@@ -457,7 +464,7 @@ footer a:hover {
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+  } */
 
 
 
