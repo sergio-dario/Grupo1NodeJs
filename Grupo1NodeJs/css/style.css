@@ -1,31 +1,17 @@
 /* Importacion de fuente googlefonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* configuracion de variables */
-:root{
-    --primary-color: #7aacf5;
-    --secondary-color:#fdede3;
-    --third-color:#db4648;
-    --third-bis-color:#db4648f2;
-    /*colores de fondo*/
-    --bg-color:#181419;
-    --bg-input-color:#2f1b352c;
-    /*fuente primaria*/
-    --primary-font: Arial, sans-serif;
-    --fuente-oscura:#031a25;
-    --primary-color-btm-hover: #719cdd;
-    --primary-color-btm-active: #668bc4;
-}
-
 /* Estilos generales */
 *{
     box-sizing: border-box;
 }
 body {
     margin: 0;
+    /* font-family: Arial, sans-serif; */
     font-family: "Montserrat", sans-serif;
     background-color: #8dbcbc;
 }
+
 
 header {
     position: fixed;
@@ -37,15 +23,7 @@ header {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
 }
 .scroll {
-    background-color: var(--primary-color);
-    /* background-color: #4781d9; */
-}
-.container {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
+    background-color: #7aacf5;
 }
 
 nav {
@@ -58,10 +36,8 @@ a.logo {
     display: flex;
     color: #137ca8;
     font-size: 1.7rem;
+    font-weight: 550;
     align-items: center;
-}
-a.logo span {
-    font-weight: 600;
 }
 .marca {
     display: inline-block;
@@ -85,12 +61,10 @@ nav > ul > li:not(:last-child) {
     align-items: center; /* no hace nada */
 }
 nav a {
-    /* color: rgb(240, 236, 236); */
-    color: #031a25;
-    color: var(--fuente-oscura);
+    color: #052e40;
     text-decoration: none;
     font-size: 1.25rem;
-    font-weight: 550;   
+    font-weight: 560;   
     transition: color 0.3s;
 }
 
@@ -126,7 +100,6 @@ li.dropdown {
     display: block;
     width: 100%;
     padding: 8px 16px;
-    font-weight: 550;
     transition: background-color 0.3s; 
 }
 
@@ -178,7 +151,7 @@ li.dropdown {
     
     /* Propiedades del contenedor */
     padding: 5px 10px; /* Reducir el padding */
-    background-color: var(--primary-color); /* Cambiar el color de fondo a rojo */
+    background-color: #88b3f3; /* Cambiar el color de fondo a rojo */
     text-decoration: none;
     color: #f2f2f2;
     font-size: 1.7rem; /* Reducir el tamaño de la fuente */
@@ -207,102 +180,33 @@ li.dropdown {
 /*comienza seccion de busqueda*/
 .que_visitas {
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 35px 0px 55px;
-    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 0 auto; */
 }
 .que_visitas form {
-    display: flex;
-    align-items: center;
-    background: #4b6161;
-    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
 }
 .que_visitas h3 {
     display: block;
-    margin: 0px 20px 0px 0px;
-    /* padding: 5px 0; */
-    color: var(--fuente-oscura);
-    font-size: 2rem;
-    font-weight: 580;
+    margin: 0 auto;
+}
 
-    color: rgb(209, 202, 202);
-    /* text-align: center; */
-    font-family: "Dancing Script", sans-serif;
-    /* font-size: 24px; */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-}
-.input-buscador{
-    height: 100%;
-    min-width: 200px;
-    width: 40vw;
-    border: 0px;
-    outline: none;
-    font-size: 1.5rem;
-    font-weight: 400;
-    background: transparent;
-    padding: 10px 20px;
-    /* border: 2px solid #4a4a4a; */
-    /* border-radius: 10px; */
-}
-.boton-buscador{
-    height: 1.7rem;
-    font-size: 1.1rem;
-    background: var(--primary-color);
-    padding: 0px 10px;
-    margin-right: 15px;
-    border: 0px;
-    border-radius: 15px;
-    color: var(--fuente-oscura);
-}
-.boton-buscador:hover {
-    background: var(--primary-color-btm-hover);
-}
-.boton-buscador:active {
-    background: var(--primary-color-btm-active);
-}
 /*termina seccion de busqueda*/
-/* Empieza el footer */
-footer {
-    display: flex;
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-    align-items: center;
-    justify-content: space-between;
-}
-footer a {
-    text-decoration: none;
-    color: var(--fuente-oscura);
-    font-size: 0.85rem;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-.redes {
-    display: inline-block;
-    justify-content: space-between;
-    /* width: 400px; */
-    /* background: grey; */
-}
-.container-a {
-    display: flex;
-    justify-content: space-evenly;
-}
-.container-a a {
-    display: block;
-}
 
-.redes p {
-    margin-top: 0px;
-    margin-bottom: 10px;
+footer {
+    background-color: #88b3f3;
+    color: #fff;
+    padding: 10px 20px;
 }
-/* Termina el footer  */
-#cordoba {padding-bottom: 100px; }
-#mendoza {padding-bottom: 100px; }
-#misiones {padding-bottom: 100px;}
-#areco {padding-bottom: 100px; }
-#sanPedro {padding-bottom: 100px; }
-#baraderos {padding-bottom: 100px;}
+#cordoba {padding-top: 100px; }
+#mendoza {padding-top: 100px; }
+#misiones {padding-top: 100px;}
+#areco {padding-top: 100px; }
+#sanPedro {padding-top: 100px; }
+#baraderos {padding-top: 100px;}
 
 
 .lugar_content {
@@ -376,10 +280,9 @@ footer a:hover {
     }
 }
 
-/* .bodyRegistrarse {
-    content: ""; */
-/* Asegura que los elementos absolutos sean relativos a este contenedor */
-    /* position: relative; 
+.bodyRegistrarse {
+    content: "";
+    position: relative; /* Asegura que los elementos absolutos sean relativos a este contenedor */
     top: 0px;
     left: 0;
     width: 100%;
@@ -390,13 +293,14 @@ footer a:hover {
     background-repeat: no-repeat;
     z-index: -2;
     opacity: 0.9; 
-} */
+}
 
-/* .bodyRegistrarse .main .seccionRegistrarse {
+
+
+.bodyRegistrarse .main .seccionRegistrarse {
     background-color: #9d9195;
-    opacity: 0.8;  */
-    /* Ajusta la opacidad */
-    /* width: 400px;
+    opacity: 0.8; /* Ajusta la opacidad */
+    width: 400px;
     margin: 0 auto;
     border-radius: 5px;
     padding: 40px 20px;
@@ -420,6 +324,7 @@ footer a:hover {
     outline: none;
     color: rgb(255, 255, 255);
 }
+
 
 .bodyRegistrarse .main .seccionRegistrarse form .error-text {
     color: #475fc7;
@@ -464,8 +369,22 @@ footer a:hover {
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  } */
-
+  }
+  #registroFallido {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #a4acf7;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
 
 

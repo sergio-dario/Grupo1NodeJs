@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Mostrar mensaje 
         registroExitosoDiv.style.display = "block";
+        
 
         // Redirigir a la página de inicio de sesión después de unos segundos
         setTimeout(function() {

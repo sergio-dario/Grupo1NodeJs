@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     const registroExitosoDiv = document.getElementById("registroExitoso");
+    const registroFallidoDiv = document.getElementById("registroFallido");
     let userDataArray = JSON.parse(localStorage.getItem("userDataArray")) || [];
 
     form.addEventListener("submit", function(event) {
@@ -21,9 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
         // Redirigir a la página de inicio de sesión después de unos segundos
         setTimeout(function() {
             window.location.href = "./index.html";
-        }, 3000); 
+        }, 1500); 
         } else {
+            registroFallidoDiv.style.display = "block";
             console.log("El email o contraseña ingresados son incorrectos.");
+            setTimeout(function() {
+                window.location.href = "./login.html";
+            }, 1500); 
         }
     });
 });
