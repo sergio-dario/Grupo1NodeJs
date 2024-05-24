@@ -336,6 +336,9 @@ li.dropdown {
     .lugar {
         flex-basis: calc(100% - 10px);
     }
+    nav ul li:not(:last-child) {
+        margin-right: 0px; /* Reducir el espacio entre elementos de la lista */
+    }
 }
 
 .bodyRegistrarse {
