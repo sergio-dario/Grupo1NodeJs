@@ -1,0 +1,171 @@
+/* Importacion de fuente googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos generales */
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Montserrat", sans-serif;
+    background-color: #8dbcbc;
+}
+/* fin de estilos generales */
+
+/* comienza el header */
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    padding: 15px 0px; /* Añadir un poco de espacio en los extremos */
+}
+.initial{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px; 
+}
+
+a.logo {
+    display: flex;
+    color: #137ca8;
+    font-size: 1.7rem;
+    font-weight: 550;
+    align-items: center;
+}
+.marca {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../static/img/avionPNG.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 7px;     
+} 
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    color: #052e40;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 560;   
+    transition: color 0.3s;
+}
+/* fin de header */
+
+/* comienza el body */
+.bodyRegistrarse {
+    content: "";
+    position: relative; /* Asegura que los elementos absolutos sean relativos a este contenedor */
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../static/img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: 0.9; 
+}
+
+
+
+.bodyRegistrarse .main .seccionRegistrarse {
+    background-color: #9d9195;
+    opacity: 0.8; /* Ajusta la opacidad */
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    font-size: 1.2rem;
+}
+/* .bodyRegistrarse .main .seccionRegistrarse form select */
+.bodyRegistrarse .main .seccionRegistrarse form input:not(.boton){
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px solid #a4acf7;
+    background-color: #333333;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.bodyRegistrarse .main .seccionRegistrarse form .error-text {
+    color: #475fc7;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form .terminos {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse form .terminos .textoCheck {
+    margin-left: 10px;
+}
+
+.bodyRegistrarse .main .seccionRegistrarse  .boton {
+    width: 87%;
+    box-sizing: content-box;
+    background-color:  #a4acf7;
+    border: 2px solid  #a4acf7;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#registroExitoso {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #a4acf7;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  #registroFallido {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #a4acf7;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }

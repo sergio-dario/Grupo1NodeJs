@@ -1,17 +1,16 @@
 /* Importacion de fuente googlefonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* configuracion de variables */
 :root{
     --primary-color: #7aacf5;
     --secondary-color:#fdede3;
-    --third-color:#db4648;
-    --third-bis-color:#db4648f2;
+    /* --third-color:; */
+    /* --third-bis-colors:; */
     /*colores de fondo*/
-    --bg-color:#181419;
-    --bg-input-color:#2f1b352c;
-    /*fuente primaria*/
-    --primary-font: Arial, sans-serif;
+    /* --bg-color:#181419; */
+    /* --bg-input-color:#2f1b352c; */
+    /* fuente primaria */
+    /* --primary-font: Arial, sans-serif; */
     --fuente-oscura:#031a25;
     --primary-color-btm-hover: #719cdd;
     --primary-color-btm-active: #668bc4;
@@ -157,7 +156,6 @@ li.dropdown {
     opacity: 0.9; /* Ajusta la opacidad según sea necesario */
 }
 
-
 .banner_content {
     /* Estilos para el contenido dentro del banner */
     position: absolute;
@@ -213,10 +211,12 @@ li.dropdown {
     border-radius: 15px;
     color: var(--fuente-oscura);
 }
+
 /* Empieza el footer */
 footer {
     display: flex;
     background-color: var(--primary-color);
+    color: var(--fuente-oscura);
     padding: 10px 20px;
     align-items: center;
     justify-content: space-between;
@@ -232,8 +232,6 @@ footer a:hover {
 .redes {
     display: inline-block;
     justify-content: space-between;
-    /* width: 400px; */
-    /* background: grey; */
 }
 .container-a {
     display: flex;
@@ -244,6 +242,7 @@ footer a:hover {
 }
 
 .redes p {
+    color: var(--fuente-oscura);
     margin-top: 0px;
     margin-bottom: 10px;
 }

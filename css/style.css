@@ -1,5 +1,20 @@
 /* Importacion de fuente googlefonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* configuracion de variables */
+:root{
+    --primary-color: #7aacf5;
+    --secondary-color:#fdede3;
+    /* --third-color:; */
+    /* --third-bis-colors:; */
+    /*colores de fondo*/
+    /* --bg-color:#181419; */
+    /* --bg-input-color:#2f1b352c; */
+    /*fuente primaria*/
+    /* --primary-font: Arial, sans-serif; */
+    --fuente-oscura:#031a25;
+    --primary-color-btm-hover: #719cdd;
+    --primary-color-btm-active: #668bc4;
+}
 
 /* Estilos generales */
 *{
@@ -386,17 +401,38 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
+/* Empieza el footer */
+footer {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--fuente-oscura);
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+footer a {
+    color: var(--fuente-oscura);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.redes {
+    display: inline-block;
+    justify-content: space-between;
+}
+.container-a {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-a a {
+    display: block;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.redes p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+/* Termina el footer  */
 
