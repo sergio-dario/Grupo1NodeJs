@@ -191,37 +191,80 @@ li.dropdown {
   .button:hover{
     animation: pulse 0.5s infinite alternate;
   }
-/*termina el portada*/
+/*termina la portada*/
 /*comienza seccion de busqueda*/
+.container-busqueda {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0px 50px 0px;
+}
 .que_visitas {
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin: 0 auto; */
+    max-width: 1050px;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+    padding: 35px 0px 55px;
+    font-family: "Montserrat", sans-serif;
 }
 .que_visitas form {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: #4b6161;
+    border-radius: 20px;
 }
 .que_visitas h3 {
     display: block;
-    margin: 0 auto;
-}
+    margin: 0px 20px 0px 0px;
+    min-width: 410px;
+    color: var(--fuente-oscura);
+    font-size: 2rem;
+    font-weight: 580;
 
+    color: rgb(209, 202, 202);
+    font-family: "Dancing Script", sans-serif;
+    /* font-size: 24px; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.input-buscador{
+    height: 100%;
+    min-width: 250px;
+    width: 100%;
+    border: 0px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: transparent;
+    padding: 10px 20px;
+    /* border: 2px solid #4a4a4a; */
+    /* border-radius: 10px; */
+}
+.boton-buscador{
+    height: 1.7rem;
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    padding: 0px 10px;
+    margin-right: 15px;
+    border: 0px;
+    border-radius: 15px;
+    color: var(--fuente-oscura);
+}
+.boton-buscador:hover {
+    background: var(--primary-color-btm-hover);
+}
+.boton-buscador:active {
+    background: var(--primary-color-btm-active);
+}
 /*termina seccion de busqueda*/
 
-footer {
-    background-color: #88b3f3;
-    color: #fff;
-    padding: 10px 20px;
-}
-#cordoba {padding-top: 100px; }
-#mendoza {padding-top: 100px; }
-#misiones {padding-top: 100px;}
-#areco {padding-top: 100px; }
-#sanPedro {padding-top: 100px; }
-#baraderos {padding-top: 100px;}
+#cordoba {padding-bottom: 100px; }
+#mendoza {padding-bottom: 100px; }
+#misiones {padding-bottom: 100px;}
+#areco {padding-bottom: 100px; }
+#sanPedro {padding-bottom: 100px; }
+#baraderos {padding-bottom: 100px;}
 
 
 .lugar_content {
@@ -237,52 +280,52 @@ footer {
     display: flex; /* Establece el contenedor como un flex container */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
     justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
-  }
+}
   
   .lugar {
-    flex-basis: calc(25% - 20px); /* Establece el tamaño base de los elementos a 25% menos el espacio entre ellos */
-    margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
-  }
-  
-  .lugar img {
-    width: 300px; /* Ancho en píxeles */
-    height: 200px; /* Altura en píxeles */
-    object-fit: cover; /* Escala la imagen para que ocupe toda su caja manteniendo su relación de aspecto */
-    margin-right: 10px; /* Margen derecho entre las imágenes */
-  }
-
-  
-@media only screen and (max-width: 850px) {
-    header {
-        padding: 10px 15px; 
+      flex-basis: calc(25% - 20px); /* Establece el tamaño base de los elementos a 25% menos el espacio entre ellos */
+      margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
     }
     
-    a.logo {
-        font-size: 1.4rem;
+    .lugar img {
+        width: 300px; /* Ancho en píxeles */
+        height: 200px; /* Altura en píxeles */
+        object-fit: cover; /* Escala la imagen para que ocupe toda su caja manteniendo su relación de aspecto */
+        margin-right: 10px; /* Margen derecho entre las imágenes */
     }
-
-    .marca {
-        width: 30px;
-        height: 30px;
+    
+    
+    @media only screen and (max-width: 850px) {
+        header {
+            padding: 10px 15px; 
+        }
         
-    }
-    nav {
-        flex-direction:column-reverse; 
-    }
-
-    .brand {
-        order: 1; /* Mueve la marca al principio de la columna */
-        margin-bottom: 10px; /* Espaciado entre la marca y los elementos de navegación */
-    }
-
+        a.logo {
+            font-size: 1.4rem;
+        }
+        
+        .marca {
+            width: 30px;
+            height: 30px;
+            
+        }
+        nav {
+            flex-direction:column-reverse; 
+        }
+        
+        .brand {
+            order: 1; /* Mueve la marca al principio de la columna */
+            margin-bottom: 10px; /* Espaciado entre la marca y los elementos de navegación */
+        }
+        
     ul {
         order: 2; /* Mueve la lista de navegación después de la marca */
     }
-   
+    
     .lugar {
         flex-basis: calc(50% - 10px);
     }
-
+    
     nav ul li:not(:last-child) {
         margin-right: 0px; /* Reducir el espacio entre elementos de la lista */
     }
@@ -384,8 +427,8 @@ footer {
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  #registroFallido {
+}
+#registroFallido {
     display: none;
     position: fixed;
     top: 50%;
@@ -399,7 +442,8 @@ footer {
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+}
+/* fin de main */
 
 /* Empieza el footer */
 footer {
@@ -410,6 +454,7 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+
 footer a {
     color: var(--fuente-oscura);
     text-decoration: none;
