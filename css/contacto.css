@@ -29,7 +29,7 @@ body {
 header {
     position: fixed;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     padding: 15px 0px; /* Añadir un poco de espacio en los extremos */
 }
 .initial{
