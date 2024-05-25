@@ -20,8 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Mostrar mensaje
       registroExitosoDiv.style.display = "block";
+      
+      // Guardar en localStorage
+      localStorage.setItem("loginSuccessful", "true");
 
-      // Redirigir a la página de inicio de sesión después de unos segundos
+     
       setTimeout(function () {
         window.location.href = "../index.html";
       }, 1500);
