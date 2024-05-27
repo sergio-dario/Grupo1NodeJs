@@ -57,10 +57,8 @@ a.logo {
     display: flex;
     color: #137ca8;
     font-size: 1.7rem;
+    font-weight: 550;
     align-items: center;
-}
-a.logo span {
-    font-weight: 600;
 }
 .marca {
     display: inline-block;
@@ -77,19 +75,22 @@ nav ul {
     margin: 0;
     padding: 0;
     align-items: center;
+    justify-content: center;
 }
 
 nav > ul > li:not(:last-child) {
-    margin-right: 30px; 
-    align-items: center; /* no hace nada */
+    margin: 0px 12px;
 }
+nav > ul > li:last-child {
+    margin-left: 12px;
+}
+
 nav a {
-    /* color: rgb(240, 236, 236); */
-    color: #031a25;
-    color: var(--fuente-oscura);
+    display: inline-block;
+    color: #052e40;
     text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: 550;   
+    font-size: 1.14rem;
+    font-weight: 560;   
     transition: color 0.3s;
 }
 

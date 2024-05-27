@@ -27,18 +27,20 @@ body {
     background-color: #8dbcbc;
 }
 
-
+/* empieza el header */
 header {
     position: fixed;
     z-index: 2;
     width: 100%;
-    padding: 15px 0px; /* Añadir un poco de espacio en los extremos */
+    padding: 12px 0px; /* Añadir un poco de espacio en los extremos */
 }
 .initial{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+    transition: background 0.2s;
 }
 .scroll {
     background-color: #7aacf5;
+    transition: background 0.2s;
 }
 
 nav {
@@ -69,16 +71,21 @@ nav ul {
     margin: 0;
     padding: 0;
     align-items: center;
+    justify-content: center;
 }
 
 nav > ul > li:not(:last-child) {
-    margin-right: 30px; 
-    align-items: center; /* no hace nada */
+    margin: 0px 12px;
 }
+nav > ul > li:last-child {
+    margin-left: 12px;
+}
+
 nav a {
+    display: inline-block;
     color: #052e40;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 560;   
     transition: color 0.3s;
 }
@@ -284,52 +291,52 @@ li.dropdown {
     justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
 }
   
-  .lugar {
-      flex-basis: calc(25% - 20px); /* Establece el tamaño base de los elementos a 25% menos el espacio entre ellos */
-      margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
+.lugar {
+    flex-basis: calc(25% - 20px); /* Establece el tamaño base de los elementos a 25% menos el espacio entre ellos */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
+}
+
+.lugar img {
+    width: 300px; /* Ancho en píxeles */
+    height: 200px; /* Altura en píxeles */
+    object-fit: cover; /* Escala la imagen para que ocupe toda su caja manteniendo su relación de aspecto */
+    margin-right: 10px; /* Margen derecho entre las imágenes */
+}
+    
+    
+@media only screen and (max-width: 860px) {
+    .que_visitas {
+        display: table-column;}
+    header {
+        padding: 10px 15px; 
     }
     
-    .lugar img {
-        width: 300px; /* Ancho en píxeles */
-        height: 200px; /* Altura en píxeles */
-        object-fit: cover; /* Escala la imagen para que ocupe toda su caja manteniendo su relación de aspecto */
-        margin-right: 10px; /* Margen derecho entre las imágenes */
+    a.logo {
+        font-size: 1.4rem;
     }
     
+    .marca {
+        width: 30px;
+        height: 30px;
+        
+    }
+    nav {
+        flex-direction:column-reverse; 
+    }
     
-    @media only screen and (max-width: 850px) {
-        .que_visitas {
-            display: table-column;}
-        header {
-            padding: 10px 15px; 
-        }
-        
-        a.logo {
-            font-size: 1.4rem;
-        }
-        
-        .marca {
-            width: 30px;
-            height: 30px;
-            
-        }
-        nav {
-            flex-direction:column-reverse; 
-        }
-        
-        .brand {
-            order: 1; /* Mueve la marca al principio de la columna */
-            margin-bottom: 10px; /* Espaciado entre la marca y los elementos de navegación */
-        }
-        
+    .brand {
+        order: 1; /* Mueve la marca al principio de la columna */
+        margin-bottom: 10px; /* Espaciado entre la marca y los elementos de navegación */
+    }
+    
     ul {
         order: 2; /* Mueve la lista de navegación después de la marca */
     }
-    
+
     .lugar {
         flex-basis: calc(50% - 10px);
     }
-    
+
    
 }
 
