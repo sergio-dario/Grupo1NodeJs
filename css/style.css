@@ -155,7 +155,7 @@ li.dropdown {
 
 
 .banner_content {
-    /* Estilos para el contenido dentro del banner */
+    /* Estilos  dentro del banner */
     position: absolute;
     top: 40%;
     left: 50%;
@@ -266,12 +266,14 @@ li.dropdown {
 }
 /*termina seccion de busqueda*/
 
+
 #cordoba {padding-top: 100px; }
 #mendoza {padding-top: 100px; }
 #misiones {padding: 100px 0px 100px;}
 #areco {padding-top: 100px; }
 #sanPedro {padding-top: 100px; }
 #baraderos {padding: 100px 0px 100px;}
+
 
 
 .lugar_content {
