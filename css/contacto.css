@@ -34,10 +34,11 @@ header {
 }
 .initial{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+    transition: background 0.2s;
 }
 .scroll {
     background-color: var(--primary-color);
-    /* background-color: #4781d9; */
+    transition: background 0.2s;
 }
 .container {
     display: flex;

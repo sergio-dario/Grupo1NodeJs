@@ -306,7 +306,8 @@ li.dropdown {
     
 @media only screen and (max-width: 860px) {
     .que_visitas {
-        display: table-column;}
+        display: table-column;
+    }
     header {
         padding: 10px 15px; 
     }
