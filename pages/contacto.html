@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turismo | Agencia de turismo | viajes</title>
+    <!--Favicon-->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <!--zona scrip-->
+    <script
+      src="https://kit.fontawesome.com/fa04600604.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/contacto.css"/>
+  </head>
+
+  <body>
+    <!--diseño de la cabezera " barra de tareas""header"-->
+    <header class="initial">
+      <nav>
+        <a href="../index.html" class="logo">
+          <i class="marca"></i><span>ARGENTUR</span>
+        </a>
+        <ul>
+          <li class="dropdown">
+            <a href="#" id="Provincias">Descubri Argentina</a>
+            <ul class="sub-menu">
+              <li><a href="../index.html#cordoba">Cordoba</a></li>
+              <li><a href="../index.html#mendoza">Mendoza</a></li>
+              <li><a href="../index.html#misiones">Misiones</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Viajes cortos</a>
+            <ul class="sub-menu">
+              <li><a href="./index2.html#areco">San Antonio de Areco</a></li>
+              <li><a href="./index2.html#sanPedro">San Pedro</a></li>
+              <li><a href="./index2.html#baraderos">Baraderos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./contacto.html" title="Contactate con nosotros"
+              >Contacto</a
+            >
+          </li>
+          <li>
+            <a href="./login.html" title="Haz click aquí para Iniciar Sesion"
+              >Iniciar Sesion</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <!-- portada -->
+    <section id="banner">
+        <div class="banner_content">
+          <h1>Recorre Argenitina de punta a punta</h1>
+          <h2>¡Descubri tu próximo destino!</h2>
+          <a href="./register.html" class="button">Registrate</a>
+        </div>
+      </section>
+      <!-- seccion de formulario  -->
+      <section id="contact" class="container">
+        <div >
+          <h4>Formulario de Contacto</h4>
+          <form action="./show_data.html" target="_blank">
+            <label for="first-name">Nombre:</label>
+            <input
+              type="text"
+              name="first-name"
+              placeholder="Ingrese su Nombre aquí..." required 
+            />
+            <br /><br />
+            <label for="last-name">Apellido:</label>
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Ingrese su Apellido aquí..." required 
+            />
+            <br /><br />
+            <label for="adress">Dirección:</label>
+            <input
+              type="text"
+              name="adress"
+              placeholder="Ingrese su domicilio..." required 
+            />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" required /> <br /><br />
+            <p>
+              Género: &nbsp;
+        
+              <input type="radio" name="gender" value="Masculino"/>Masculino
+
+              <input type="radio" name="gender" value="Femenino"/>Femenino
+
+              <input type="radio" name="gender" value="Otro"/>Otro
+            </p>
+
+            <label for="country">País:</label><br> 
+            <select name="country" id="country">
+              <option value="AR">Argentina</option>
+              <option value="BO">Bolivia</option>
+              <option value="PY">Paraguay</option>
+              <option value="PE">Perú</option>
+              <option value="UY">Uruguay</option>
+              <option value="CL">Chile</option>
+              <option value="BR">Brasil</option>
+            </select>&nbsp;
+            <h5>Dejanos tu consulta!</h5>
+            <textarea name="comentario" id="comentario" cols="30" rows="6" placeholder="Escribe tu comentario aquí"></textarea>
+
+            <input type="submit" value="Enviar" class="boton-buscador"><br><br>
+            <input type="reset" value="Borrar"><br><br>
+
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-f">
+        <a href="./register.html" download="nombre_personalizado.html">Descarga del archivo</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Ayuda</a>
+  
+      </div>
+      <div class="redes">
+        <p>Siguenos en nuetras redes sociales</p>
+        <div class="container-a">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- zona script -->
+    <script src="../js/navScroll.js"></script>
+  </body>
+</html>

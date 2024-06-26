@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo | Agencia de turismo | viajes</title>
+  <!--Favicon-->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+  <!--zona scrip-->
+
+  <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/login.css">
+
+
+</head>
+<body class="bodyRegistrarse">
+    <header class="initial">
+        <nav>
+            <a href="../index.html" class="logo">
+              <i class="marca"></i><span>ARGENTUR</span>
+            </a>
+        </nav>
+    </header>
+    <main id="main" class="main">
+        <section  class="seccionRegistrarse">
+           
+            <form action="" method="get">
+                <h2 >Iniciar Sesión</h2>
+                <div>
+                    <input type="email" placeholder="Email" id="email" name="email">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                    <div class="error-text"></div>
+                </div>
+                <div>
+                    <input class="boton" type="submit" value="Iniciar Sesión">
+                </div>
+                <div id="registroExitoso" style="display: none;">¡Inicio de sesión exitoso!</div>
+                
+                <div id="registroFallido" style="display: none;">¡Email y/o Contraseña incorrecto!</div>
+                    <a id="ayuda" class="ayuda" href="./register.html">Registrarse</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
