@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Mostrar mensaje
       registroExitosoDiv.style.display = "block";
-      
+
       // Guardar en localStorage
       localStorage.setItem("loginSuccessful", "true");
+      localStorage.setItem("loggedInUserName", userFound.name);
 
-     
       setTimeout(function () {
         window.location.href = "../index.html";
       }, 1500);

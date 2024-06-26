@@ -52,24 +52,23 @@
   
   <!-- seccion principal del index -->
   <main>
-    <!-- portada -->
-    <section id="banner">
-      <div class="banner_content">
-        <h1>Recorre Argenitina de punta a punta</h1>
-        <h2>¡Descubri tu próximo destino!</h2>
-        <a href="pages/register.html" class="button">Registrate</a>
-      </div>
+     <!-- Portada -->
+  <section id="banner">
+    <div class="banner_content">
+      <h1>Recorre Argentina de punta a punta</h1>
+      <h2>¡Descubri tu próximo destino!</h2>
+      <a href="pages/register.html" id="main-button" class="button">Registrate</a>
+    </div>
+  </section>
+  <!-- Sección de búsquedas -->
+  <div class="container-busqueda">
+    <section id="que_visitas" class="que_visitas">
+      <h3>¿Qué provincia vas a visitar?:</h3>
+      <form action="#" method="get">
+        <input type="text" placeholder="Ej: Cordoba" class="input-buscador">
+        <input type="submit" value="Buscar" class="boton-buscador">
+      </form>
     </section>
-    <!-- seccion de busquedas  -->
-    <div class="container-busqueda">
-      <section id="que_visitas" class="que_visitas">
-        <h3>Que provincia vas a visitar?:</h3>
-        <form action="#" method="get">
-          <label></label>
-          <input type="text" placeholder="Ej: Cordoba" class="input-buscador">
-          <input type="submit" value="Buscar" class="boton-buscador">
-        </form>
-      </section>
 
     </div>
 
@@ -208,8 +207,17 @@
   </footer>
 
   <!-- zona script -->
-  <script src="js/navScroll.js"></script>
-  <script src="js/index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const mainButton = document.getElementById("main-button");
+      const loggedInUserName = localStorage.getItem("loggedInUserName");
+  
+      if (loggedInUserName) {
+        mainButton.textContent = "Reserva";
+        mainButton.href = "pages/reserva.html";
+      }
+    });
+  </script>
 </body>
 
 </html>
