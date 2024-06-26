@@ -1,0 +1,154 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #8dbcbc;
+}
+
+/* comienza el header */
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.initial {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+a.logo {
+    display: flex;
+    color: #137ca8;
+    font-size: 1.7rem;
+    font-weight: 550;
+    align-items: center;
+}
+
+.marca {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../static/img/avionPNG.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    color: #052e40;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 560;
+    transition: color 0.3s;
+}
+
+/* comienza el body */
+.bodyReservas {
+    content: "";
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../static/img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+.bodyReservas .main .seccionReservas {
+    background-color: #9d9195;
+    opacity: 0.8;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.bodyReservas .main .seccionReservas h2 {
+    margin-bottom: 20px;
+    color: #052e40;
+}
+
+.bodyReservas .main .seccionReservas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bodyReservas .main .seccionReservas table th,
+.bodyReservas .main .seccionReservas table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.bodyReservas .main .seccionReservas table th {
+    background-color: #137ca8;
+    color: white;
+}
+
+.bodyReservas .main .seccionReservas form input:not(.boton) {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px solid #a4acf7;
+    background-color: #333333;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+.bodyReservas .main .seccionReservas .boton {
+    width: 90%;
+    box-sizing: content-box;
+    background-color: #a4acf7;
+    border: 2px solid #a4acf7;
+    color: #ffffff;
+    padding: 0.5rem 1rem; 
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bodyReservas .main .seccionReservas table button {
+    background-color: #a4acf7;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bodyReservas .main .seccionReservas table button:hover {
+    background-color: #6c7ae0;
+}
